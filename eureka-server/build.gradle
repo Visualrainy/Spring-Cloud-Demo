@@ -11,13 +11,14 @@ repositories {
     mavenCentral()
 }
 
-bootJar {
-    enabled = false
-}
-
-jar {
-    enabled = true
-}
+// no need in this submodule as it's a spring boot application
+//bootJar {
+//    enabled = false
+//}
+//
+//jar {
+//    enabled = true
+//}
 
 dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter'
