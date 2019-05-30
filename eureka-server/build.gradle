@@ -11,6 +11,14 @@ repositories {
     mavenCentral()
 }
 
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
+
 dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter'
     testCompile group: 'junit', name: 'junit', version: '4.12'
