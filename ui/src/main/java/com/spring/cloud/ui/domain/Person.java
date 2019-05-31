@@ -12,6 +12,10 @@ public class Person {
     @Setter
     private String name;
 
+    public Person() {
+        super();
+    }
+
     public Person(String name) {
         super();
         this.name = name;
