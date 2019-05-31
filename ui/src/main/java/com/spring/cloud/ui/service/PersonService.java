@@ -1,7 +1,7 @@
 package com.spring.cloud.ui.service;
 
 import com.spring.cloud.ui.domain.Person;
-import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
