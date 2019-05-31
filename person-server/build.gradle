@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'spring-cloud'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.cloud:spring-cloud-starter'
+    implementation 'org.springframework.cloud:spring-cloud-starter-eureka'
+    implementation 'org.springframework.cloud:spring-cloud-config-client'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.hsqldb:hsqldb'
+    implementation 'postgresql:postgresql:9.1-901-1.jdbc4'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
