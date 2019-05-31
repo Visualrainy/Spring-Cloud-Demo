@@ -1,3 +1,5 @@
+# for docker production profile, not active and implement in this demo,
+# please check "https://github.com/wangxiaodong0120/springboot-wyf-sourcecode/tree/master/ch12" for dockerfile and docker-compose file
 spring:
   jpa:
     database: POSTGRESQL
