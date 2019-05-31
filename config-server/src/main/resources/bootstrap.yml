@@ -2,7 +2,7 @@ spring:
   application:
     name: config
   profiles:
-    active: native
+    active: native #本地配置（默认是git配置）
 
 eureka:
   instance:
