@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@EnableDiscoveryClient
+@EnableDiscoveryClient //similar as @EnableEurekaClient
 @RestController
 public class SomeApplication {
     //通过@Value注入来自config server的值
