@@ -4,4 +4,5 @@ include 'config-server'
 include 'person-server'
 include 'some-server'
 include 'ui'
+include 'monitor'
 

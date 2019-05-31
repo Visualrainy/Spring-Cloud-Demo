@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/config-server" />
             <option value="$PROJECT_DIR$/eureka-server" />
+            <option value="$PROJECT_DIR$/monitor" />
             <option value="$PROJECT_DIR$/person-server" />
             <option value="$PROJECT_DIR$/some-server" />
             <option value="$PROJECT_DIR$/ui" />
