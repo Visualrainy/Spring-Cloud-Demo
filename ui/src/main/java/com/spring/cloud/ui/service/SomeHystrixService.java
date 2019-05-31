@@ -9,6 +9,8 @@ import org.springframework.web.client.RestTemplate;
 
 @Service
 public class SomeHystrixService {
+    // Ribbon can automatically be configured by
+    // registering RestTemplate as a bean and annotating it with @LoadBalanced
     @LoadBalanced
     @Bean
     RestTemplate restTemplate(){
