@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/config-server" />
             <option value="$PROJECT_DIR$/eureka-server" />
             <option value="$PROJECT_DIR$/person-server" />
+            <option value="$PROJECT_DIR$/some-server" />
           </set>
         </option>
         <option name="useQualifiedModuleNames" value="true" />
