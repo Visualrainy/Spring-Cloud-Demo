@@ -2,12 +2,14 @@ package com.spring.cloud.ui.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 @Service
 public class SomeHystrixService {
+    @LoadBalanced
     @Bean
     RestTemplate restTemplate(){
         return new RestTemplate();
@@ -18,7 +20,7 @@ public class SomeHystrixService {
 
     @HystrixCommand(fallbackMethod = "fallbackSome")
     public String getSome() {
-        return restTemplate.getForObject("http://some/getSome", String.class);
+        return restTemplate.getForObject("http://some/getsome", String.class);
     }
 
     public String fallbackSome() {
