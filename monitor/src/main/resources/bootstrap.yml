@@ -1,3 +1,4 @@
+# ${variable} can be set in docker-compose's environment field
 spring:
   application:
     name: monitor
