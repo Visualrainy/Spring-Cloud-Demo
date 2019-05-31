@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/eureka-server" />
             <option value="$PROJECT_DIR$/person-server" />
             <option value="$PROJECT_DIR$/some-server" />
+            <option value="$PROJECT_DIR$/ui" />
           </set>
         </option>
         <option name="useQualifiedModuleNames" value="true" />

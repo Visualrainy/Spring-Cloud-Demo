@@ -3,4 +3,5 @@ include 'eureka-server'
 include 'config-server'
 include 'person-server'
 include 'some-server'
+include 'ui'
 
