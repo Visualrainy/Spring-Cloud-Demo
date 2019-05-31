@@ -1,4 +1,4 @@
-package com.spring.cloud.person;
+package com.spring.cloud.person.controller;
 
 import com.spring.cloud.person.dao.PersonRepository;
 import com.spring.cloud.person.domain.Person;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class Controller {
+public class PersonController {
 
     @Autowired
     PersonRepository personRepository;

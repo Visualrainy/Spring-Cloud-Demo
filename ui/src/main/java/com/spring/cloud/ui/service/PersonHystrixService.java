@@ -18,8 +18,8 @@ public class PersonHystrixService {
         return personService.save(name);
     }
 
-    public List<Person> fallbackSave() {
-        List<Person> list = Arrays.asList(new Person("Person Service 故障"));
+    public List<Person> fallbackSave(String name) {
+        List<Person> list = Arrays.asList(new Person(name + "没有保存成功，Person Service 故障"));
         return list;
     }
 }
