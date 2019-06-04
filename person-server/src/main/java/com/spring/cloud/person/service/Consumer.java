@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 public class Consumer {
     private static final Logger logger = LoggerFactory.getLogger(Producer.class);
 
+    //kafka-console-consumer --bootstrap-server localhost:9092 --topic firstKafkaMessage --from-beginning
     @KafkaListener(topics = "users", groupId = "group_id")
     public void consume(String message) throws Exception {
         logger.info(String.format("#### -> Consumed message -> %s", message));

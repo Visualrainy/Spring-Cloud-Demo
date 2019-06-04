@@ -14,6 +14,7 @@ public class Producer {
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
 
+    //kafka-console-producer --broker-list localhost:9092 --topic firstKafkaMessage
     public void sendMessage(String message) {
         logger.info(String.format("#### -> Producing message -> %s", message));
         kafkaTemplate.send(TOPIC, message);
